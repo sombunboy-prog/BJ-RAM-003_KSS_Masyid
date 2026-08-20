@@ -1,0 +1,89 @@
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: center; font-family: sans-serif; width: 100%; max-width: 1000px; border: 1px solid #a0a0a0;">
+  <thead>
+    <!-- หัวข้อใหญ่ประจำตาราง -->
+    <tr style="background-color: #2c3e50; color: white;">
+      <th colspan="7" style="border: 1px solid #a0a0a0; font-size: 1.2em; padding: 12px;">bj โหนดมัสยิด ริมคลอง</th>
+    </tr>
+    <tr style="background-color: #d35400; color: white;">
+      <th colspan="2" style="border: 1px solid #a0a0a0;">สายขาเข้า (Input)</th>
+      <th style="border: 1px solid #a0a0a0; background-color: #b34200;">จุดเชื่อมต่อที่ 1</th>
+      <th style="border: 1px solid #a0a0a0;">อุปกรณ์แยกสัญญาณ</th>
+      <th style="border: 1px solid #a0a0a0; background-color: #b34200;">จุดเชื่อมต่อที่ 2</th>
+      <th colspan="2" style="border: 1px solid #a0a0a0;">สายขาออกปลายทาง (Output Destination)</th>
+    </tr>
+    <tr style="background-color: #fed7bc; color: #333;">
+      <th style="width: 22%; border: 1px solid #a0a0a0;">ชื่อสายไฟเบอร์</th>
+      <th style="width: 12%; border: 1px solid #a0a0a0;">หมายเลขคอร์</th>
+      <th style="width: 16%; border: 1px solid #a0a0a0; background-color: #ffe6d5;">ทิศทางเข้า Input</th>
+      <th style="width: 14%; border: 1px solid #a0a0a0;">Splitter (SP 50:50)</th>
+      <th style="width: 16%; border: 1px solid #a0a0a0; background-color: #ffe6d5;">ทิศทางออก Output</th>
+      <th style="width: 22%; border: 1px solid #a0a0a0;">ชื่อโหนดปลายทาง</th>
+      <th style="width: 10%; border: 1px solid #a0a0a0;">หมายเลขคอร์</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <!-- รายการที่ 1: คอร์ 2 ต่อตรงเข้าโหนดมัสยิด -->
+    <tr style="background-color: #ffffff;">
+      <td style="border: 1px solid #a0a0a0; text-align: left; padding-left: 12px;"><b>bj lenovo(widen 12 C)</b></td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ 2</td>
+      <td style="border: 1px solid #a0a0a0; background-color: #fffaf0; font-weight: bold; color: #d35400;">&rarr; ต่อตรง</td>
+      <td style="border: 1px solid #a0a0a0; background-color: #f2f4f4; color: #7f8c8d;">-</td>
+      <td style="border: 1px solid #a0a0a0; background-color: #f2f4f4; color: #7f8c8d;">-</td>
+      <td style="border: 1px solid #a0a0a0; text-align: left; padding-left: 12px; background-color: #fcf3cf;"><b>โหนดมัสยิด</b></td>
+      <td style="border: 1px solid #a0a0a0; background-color: #fcf3cf; font-weight: bold;">-</td>
+    </tr>
+
+    <!-- รายการที่ 2 แถวบน: คอร์ 3 เข้าตู้ Splitter ออกเส้นที่ 1 -->
+    <tr style="background-color: #ffffff;">
+      <td style="border: 1px solid #a0a0a0; border-bottom: none; text-align: left; padding-left: 12px;"><b>bj lenovo (widen 12 C)</b></td>
+      <td style="border: 1px solid #a0a0a0; border-bottom: none;">คอร์ 3</td>
+      <td style="border: 1px solid #a0a0a0; border-bottom: none; background-color: #fffaf0; font-weight: bold; color: #d35400;">&rarr; ขา input</td>
+      <td style="background-color: #fef9e7; border: 1px solid #a0a0a0;">Out เส้นที่ 1</td>
+      <td style="border: 1px solid #a0a0a0; background-color: #fffaf0; font-weight: bold; color: #d35400;">&rarr; ลาดพร้าว 130</td>
+      <td style="border: 1px solid #a0a0a0; text-align: left; padding-left: 12px;"><b>Bj ลาดพร้าว 130 (widen 4 c)</b></td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ 1</td>
+    </tr>
+
+    <!-- รายการที่ 2 แถวล่าง: ออกเส้นที่ 2 จาก Splitter -->
+    <tr style="background-color: #ffffff;">
+      <td style="border: 1px solid #a0a0a0; border-top: none;"></td>
+      <td style="border: 1px solid #a0a0a0; border-top: none;"></td>
+      <td style="border: 1px solid #a0a0a0; border-top: none; background-color: #fffaf0;"></td>
+      <td style="background-color: #fef9e7; border: 1px solid #a0a0a0;">Out เส้นที่ 2</td>
+      <td style="border: 1px solid #a0a0a0; background-color: #fffaf0; font-weight: bold; color: #d35400;">&rarr; ลาดพร้าว 140</td>
+      <td style="border: 1px solid #a0a0a0; text-align: left; padding-left: 12px;"><b>Bj ลาดพร้าว 140 (widen 4 c)</b></td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ 1</td>
+    </tr>
+
+    <!-- ส่วนสรุปคอร์ที่เหลือในระบบเพื่อใช้เป็นพอร์ตสำรอง -->
+    <tr style="color: #888; background-color: #ffffff; font-size: 0.9em;">
+      <td style="border: 1px solid #a0a0a0; text-align: left; padding-left: 12px;">bj lenovo (12 C)</td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ที่เหลือ (1, 4-12)</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ว่าง (สำรอง)</td>
+    </tr>
+    <tr style="color: #888; background-color: #ffffff; font-size: 0.9em;">
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ว่าง (สำรอง)</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0; text-align: left; padding-left: 12px;">Bj ลาดพร้าว 130 (4 c)</td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ที่เหลือ (2-4)</td>
+    </tr>
+    <tr style="color: #888; background-color: #ffffff; font-size: 0.9em;">
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ว่าง (สำรอง)</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0;">-</td>
+      <td style="border: 1px solid #a0a0a0; text-align: left; padding-left: 12px;">Bj ลาดพร้าว 140 (4 c)</td>
+      <td style="border: 1px solid #a0a0a0;">คอร์ที่เหลือ (2-4)</td>
+    </tr>
+
+  </tbody>
+</table>
